@@ -1,24 +1,35 @@
 import React from 'react';
 import logo from './logo.svg';
-import './App.css';
+import './App.scss';
+import { Nav } from './components/Nav/Nav';
+import { Routes, Route } from 'react-router-dom'
+import { navElements, PathNav } from './Store/HelperInterface';
 
 function App() {
+
+  const navigation: navElements[] = [
+  {
+    path: PathNav.HOME,
+  name: 'Home'
+},
+  {
+    path: PathNav.ALL,
+    name: 'All Books'
+  },
+  {
+    path: PathNav.ADD,
+    name: 'Add Books'
+  }
+]
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Nav navElements={navigation} />
+      <Routes>
+        <Route path='/all' />
+        <Route path='/add' />
+        <Route path='/' />
+        <Route path=':book/:id' />
+      </Routes>
     </div>
   );
 }
