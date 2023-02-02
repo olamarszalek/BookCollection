@@ -4,7 +4,7 @@ export interface BookInterface {
   id?: number;
   title: string;
   author: string;
-  desc: string;
+  description: string;
   years?: number;
   rating: number[];
   url?: string;

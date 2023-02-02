@@ -5,7 +5,7 @@ interface ShowText {
     text: string
 }
 
-export const showMoreText: FC<ShowText> = ({text}) => {
+export const ShowMoreText: FC<ShowText> = ({text}) => {
     const [showMore, setShowMore] = useState(false)
 
     return (
