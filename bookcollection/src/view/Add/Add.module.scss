@@ -1,0 +1,19 @@
+.blockPadding {
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    column-gap: 250px;
+}
+
+.datePicker {
+    width: 30%;
+    margin-bottom: 50px;
+}
+
+.button {
+    width: 250px;
+}
+
+.wrapperButton, .wrapperDatePicker {
+    margin: 25px;
+}

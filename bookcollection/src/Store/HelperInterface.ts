@@ -32,3 +32,12 @@ export interface AlertInfoSnackbar {
   message: string;
   addBook?: boolean;
 }
+
+export interface Payload {
+  author: string,
+  title: string,
+  description: string,
+  years: number | undefined,
+  rating: number[],
+  url: string
+}
