@@ -36,7 +36,7 @@ export const BookCard: FC<PropsBookCard> = ({
   collapse,
   isBackArrow,
   imgSRC,
-  rating,
+  rating
 }) => {
   const navigate = useNavigate();
   const ratingValue =

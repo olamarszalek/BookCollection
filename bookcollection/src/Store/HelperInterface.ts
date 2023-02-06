@@ -11,7 +11,7 @@ export interface BookInterface {
 }
 
 export interface AuthorInterface {
-  name: string;
+  author: string;
   books?: string[];
   bio: string;
 }
