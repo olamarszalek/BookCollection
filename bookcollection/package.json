@@ -57,5 +57,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@types/lodash": "^4.14.191",
+    "@types/uniqid": "^5.3.2"
   }
 }
