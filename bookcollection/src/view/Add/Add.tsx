@@ -25,16 +25,17 @@ import { useNavigate } from "react-router";
 import { BookInterface, Payload } from "../../Store/HelperInterface";
 import { GlobalState } from "../../Store/GlobalStore";
 import { debounce } from "lodash";
-import moment, {Moment} from "moment";
-import { AdapterMoment } from '@mui/x-date-pickers/AdapterMoment'
-
+import moment, { Moment } from "moment";
+import { AdapterMoment } from "@mui/x-date-pickers/AdapterMoment";
 
 const Add: FC = () => {
   const date = new Date().getFullYear().toLocaleString();
-  
-  const [datePickerValue, setDatePickerValue] = useState<Moment | null>(moment(date));
 
-  const maxDate = moment(date)
+  const [datePickerValue, setDatePickerValue] = useState<Moment | null>(
+    moment(date)
+  );
+
+  const maxDate = moment(date);
 
   const [isBookInvalid, setBookInvalid] = useState(true);
 
@@ -144,91 +145,137 @@ const Add: FC = () => {
 
   const saveBio = () => {
     const payload = {
-        author: newAuthor,
-        bio: authorBio.current?.value !== "" ? authorBio.current?.value : `No data about ${newAuthor}`
-    }
+      author: newAuthor,
+      bio:
+        authorBio.current?.value !== ""
+          ? authorBio.current?.value
+          : `No data about ${newAuthor}`,
+    };
 
     addAuthor(payload)
-    .then (res => {
+      .then((res) => {
         global.globalAlertInfoSnackbarChange({
-            severity: "success",
-            message: `${payload.author}'s bio was added.`,
-            addBook: false
-        })
-        global.globalOpenSnackbarChange(true)
-    })
-    .catch(err => {
+          severity: "success",
+          message: `${payload.author}'s bio was added.`,
+          addBook: false,
+        });
+        global.globalOpenSnackbarChange(true);
+      })
+      .catch((err) => {
         global.globalAlertInfoSnackbarChange({
           severity: "error",
-          message:  `Couldn't save author: ${payload.author}`
-        })
-        global.globalOpenSnackbarChange(true)
-    })
-    setOpen(false)
+          message: `Couldn't save author: ${payload.author}`,
+        });
+        global.globalOpenSnackbarChange(true);
+      });
+    setOpen(false);
   };
   const checkInput = () => {
-    const authorNameInputVal = (authorName.current?.children[0] as HTMLInputElement).value
-    const isAuthor = global.globalAuthors.some(item => item.author.toUpperCase() === authorNameInputVal.toUpperCase())
+    const authorNameInputVal = (
+      authorName.current?.children[0] as HTMLInputElement
+    ).value;
+    const isAuthor = global.globalAuthors.some(
+      (item) => item.author.toUpperCase() === authorNameInputVal.toUpperCase()
+    );
     if (!isAuthor) {
-      setNewAuthor(authorNameInputVal)
-      setOpen(true)
+      setNewAuthor(authorNameInputVal);
+      setOpen(true);
     }
-  }
+  };
   const handleCloseSnackbar = () => {
-    global.globalOpenSnackbarChange(false)
-  }
+    global.globalOpenSnackbarChange(false);
+  };
   return (
     <>
-    <Box component="form" className={styles.blockPadding} ref={form}>
-      <FormControl>
-        <InputLabel htmlFor={idAuthor}>Author</InputLabel>
-        <Input id={idAuthor} ref={authorName} onChange={debounce(checkInput, 1000)} />
-        <FormHelperText id="my-helper-text">First and Last Name</FormHelperText>
-      </FormControl>
-      <FormControl>
-        <InputLabel htmlFor={idTitle}>Book Title</InputLabel>
-        <Input id={idTitle}/>
-        <FormHelperText id="my-helper-text">Provide Book Title</FormHelperText>
-      </FormControl>
+      <Box component="form" className={styles.blockPadding} ref={form}>
+        <FormControl>
+          <InputLabel htmlFor={idAuthor}>Author</InputLabel>
+          <Input
+            id={idAuthor}
+            ref={authorName}
+            onChange={debounce(checkInput, 1000)}
+          />
+          <FormHelperText id="my-helper-text">
+            First and Last Name
+          </FormHelperText>
+        </FormControl>
+        <FormControl>
+          <InputLabel htmlFor={idTitle}>Book Title</InputLabel>
+          <Input id={idTitle} />
+          <FormHelperText id="my-helper-text">
+            Provide Book Title
+          </FormHelperText>
+        </FormControl>
 
-      <TextField 
-      is={idDescription}
-      label="Book description"
-      variant="standard"
-      multiline
-      maxRows={10}
-      />
+        <TextField
+          is={idDescription}
+          label="Book description"
+          variant="standard"
+          multiline
+          maxRows={10}
+        />
 
-      <div className={styles.WrapperDataPicker}>
-        <LocalizationProvider dateAdapter={AdapterMoment} >
-          <DatePicker views={['year']}
-          label="Publishing date"
-          className={styles.datePicker}
-          value={datePickerValue}
-          maxDate={maxDate}
-          onChange={(newValue) => {
-            const val = newValue ? newValue : moment(date)
-            setDatePickerValue(val)
-          }}
-          renderInput={(params) => <TextField {...params} helperText={null}/>}/>
-        </LocalizationProvider>
-      </div>
+        <div className={styles.WrapperDataPicker}>
+          <LocalizationProvider dateAdapter={AdapterMoment}>
+            <DatePicker
+              views={["year"]}
+              label="Publishing date"
+              className={styles.datePicker}
+              value={datePickerValue}
+              maxDate={maxDate}
+              onChange={(newValue) => {
+                const val = newValue ? newValue : moment(date);
+                setDatePickerValue(val);
+              }}
+              renderInput={(params) => (
+                <TextField {...params} helperText={null} />
+              )}
+            />
+          </LocalizationProvider>
+        </div>
 
-      <FormControl>
-        <InputLabel htmlFor={idImg}>Photo URL</InputLabel>
-        <Input id={idImg} aria-describedby="my-helper-text"/>
-        <FormHelperText id="my-helper-text">Paste photo URL here</FormHelperText>
-      </FormControl>
-      {!isBookInvalid && <p>Form filled incorrectly</p>}
-      <div className={styles.wrapperButton}>
+        <FormControl>
+          <InputLabel htmlFor={idImg}>Photo URL</InputLabel>
+          <Input id={idImg} aria-describedby="my-helper-text" />
+          <FormHelperText id="my-helper-text">
+            Paste photo URL here
+          </FormHelperText>
+        </FormControl>
+        {!isBookInvalid && <p>Form filled incorrectly</p>}
+        <div className={styles.wrapperButton}>
           <Button
-          type="submit"
-          variant="contained"
-          color="primary"
-          className={styles.button}
-          onClick={(event) => submitBook(event)}>Save</Button>
-      </div>
-    </Box>
+            type="submit"
+            variant="contained"
+            color="primary"
+            className={styles.button}
+            onClick={(event) => submitBook(event)}
+          >
+            Save
+          </Button>
+        </div>
+      </Box>
+      <Modal open={open}>
+        <Box sx={style}>
+        <Typography variant ="h6">Add bio for: {newAuthor}</Typography>
+        <TextField 
+        id="bio"
+        label="Author's bio"
+        variant="standard"
+        inputRef={authorBio}
+        multiline
+        fullWidth
+        maxRows={10}
+        />
+        <Button color="primary" onClick={saveBio}>Save</Button>
+        </Box>
+      </Modal>
+      {!global.globalAlertInfoSnackbar.addBook && <Snackbar open={global.globalOpenSnackbar} autoHideDuration={6000} onClose={handleCloseSnackbar}>
+       <Alert onClose={handleCloseSnackbar} severity={global.globalAlertInfoSnackbar.severity} sx={{width: "100%"}}>
+        {global.globalAlertInfoSnackbar.message}
+        </Alert> 
+      </Snackbar>}
     </>
-  )
+  );
 };
+
+export default Add
