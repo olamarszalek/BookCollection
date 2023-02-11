@@ -7,6 +7,8 @@ import { navElements, PathNav } from './Store/HelperInterface';
 import { Home } from './view/Home/Home';
 import Add from './view/Add/Add';
 import { All } from './view/All/All';
+import { OneBook } from './view/OneBook/OneBook';
+import { GlobalStore } from './Store/GlobalStore';
 
 
 function App() {
@@ -26,15 +28,17 @@ function App() {
   }
 ]
   return (
+    <GlobalStore>
     <div className="App">
       <Nav navElements={navigation} />
       <Routes>
         <Route path='/all' element={<All/>}/>
         <Route path='/add' element={<Add />} />
         <Route path='/' element={<Home/>}/>
-        <Route path=':book/:id' />
+        <Route path=':book/:id' element={<OneBook />} />
       </Routes>
     </div>
+    </GlobalStore>
   );
 }
 
