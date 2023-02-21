@@ -32,7 +32,8 @@ function App() {
     <div className="App">
       <Nav navElements={navigation} />
       <Routes>
-        <Route path='/all' element={<All/>}/>
+      
+        <Route path='/all' element={<All/>} /> 
         <Route path='/add' element={<Add />} />
         <Route path='/' element={<Home/>}/>
         <Route path=':book/:id' element={<OneBook />} />

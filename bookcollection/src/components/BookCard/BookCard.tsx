@@ -11,7 +11,7 @@ import {
 import styles from "./BookCard.module.scss";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 import { ShowMoreText } from "../ShowMoreText/ShowMoreText";
-import { useNavigate } from "react-router";
+import { useNavigate } from "react-router-dom";
 
 interface PropsBookCard {
   title: string;

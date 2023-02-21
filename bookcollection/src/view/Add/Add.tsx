@@ -14,16 +14,16 @@ import {
 } from "@mui/material";
 import { DatePicker } from "@mui/x-date-pickers";
 import { LocalizationProvider } from "@mui/x-date-pickers/LocalizationProvider";
-import styles from ".Add.module.scss";
+import styles from "./Add.module.scss";
 import uniqid from "uniqid";
 import {
   addNewBook,
   getAuthors,
   addAuthor,
 } from "../../services/books.service";
-import { useNavigate } from "react-router";
-import { BookInterface, Payload } from "../../Store/HelperInterface";
-import { GlobalState } from "../../Store/GlobalStore";
+import { useNavigate } from "react-router-dom";
+
+import { GlobalState, BookInterface } from "../../Store/GlobalStore";
 import { debounce } from "lodash";
 import moment, { Moment } from "moment";
 import { AdapterMoment } from "@mui/x-date-pickers/AdapterMoment";

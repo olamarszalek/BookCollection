@@ -2,9 +2,10 @@ import styles from "./All.module.scss";
 import { useEffect, useContext, FC } from "react";
 import { getBooks, getAuthors } from "../../services/books.service";
 import { GlobalState } from "../../Store/GlobalStore";
-import { useNavigate } from "react-router";
+import { useNavigate } from "react-router-dom";
 import { BookCard } from "../../components/BookCard/BookCard";
 import { Grid, Button, Alert, Snackbar } from "@mui/material";
+import axios from 'axios'
 
 
 export const All: FC = () => {
@@ -12,19 +13,19 @@ export const All: FC = () => {
   const navigate = useNavigate();
   const getAllBooks = async () => {
     try {
-      const books = await getBooks();
-      await global.globalGetBooks(books.data);
+      const books = await getBooks()
+      console.log(books)
+      await global.globalGetBooks(books.data)
+
     } catch {
-      {
-        <p>Books are not accessible</p>;
-      }
+      // obsługujemy error
     }
-  };
+  }
 
   const getAllAuthors = async () => {
-    const authors = await getAuthors();
-    await global.globalGetAuthors(authors.data);
-  };
+    const authors = await getAuthors()
+    await global.globalGetAuthors(authors.data)
+  }
 
   useEffect(() => {
     getAllBooks();
@@ -33,11 +34,11 @@ export const All: FC = () => {
 
   const howManyCards = global.globalBooks.length <= 2 ? 6 : 4;
 
-  const booksWithAuthorsBio = global.globalBooks.map((book) => {
+  const booksWithAuthorsBio = global.globalBooks.map(book => {
     const author = global.globalAuthors.find(
-      (item) => item.author.toUpperCase() === BookCard.author.toUpperCase()
+      item => item.author.toUpperCase() === book.author.toUpperCase()
     );
-    const bio = author ? author.bio : "No bio available";
+    const bio = author ? author.bio : "No bio available"
     return { ...book, bio };
   });
 
@@ -72,8 +73,8 @@ export const All: FC = () => {
 
   return (
     <>
-      <Grid>{showCardWithBook}</Grid>
-      {global.globalAlertInfoSnackbar.addBook && (
+      <Grid container spacing={3}>{showCardWithBook}</Grid>
+      {global.globalAlertInfoSnackbar.addBook && 
         <Snackbar
           open={global.globalOpenSnackbar}
           autoHideDuration={6000}
@@ -87,7 +88,7 @@ export const All: FC = () => {
             {global.globalAlertInfoSnackbar.message}
           </Alert>
         </Snackbar>
-      )}
+      }
     </>
-  );
+);
 };

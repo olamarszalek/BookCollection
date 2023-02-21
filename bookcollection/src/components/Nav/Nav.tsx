@@ -16,10 +16,10 @@ export const Nav: FC<PropsNav> = props => {
                     <Link to="/">Home</Link>
                 </li>
                 <li>
-                    <Link to="">All Books</Link>
+                    <Link to="/all">All Books</Link>
                 </li>
                 <li>
-                    <Link to="">Add Books</Link>
+                    <Link to="/add">Add Books</Link>
                 </li>
             </ul>
         </nav>
