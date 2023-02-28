@@ -1,3 +1,5 @@
+@import '../../typography/tokens.scss';
+
 html {
     box-sizing: border-box;
   }
@@ -13,38 +15,38 @@ html {
   
   
   
-  nav {
+  .nav {
     position: sticky;
     top: 0;
-    padding-top: 50px;
-    background-color: rgb(226, 224, 224);
-    z-index: 100;
-  }
-  
-  .menu {
+    padding: 20px;
+    background-color: $first-color;
+    z-index: 100; 
     display: flex;
     justify-content: center;
     list-style: none;
+    ul {
+      display: inline-flex;
+      width: 50%;
+      justify-content: space-around;
+    }
   }
-  
-  .menu li {
-    width: 200px;
-    height: 50px;
-    transition: background-position-x 0.9s linear;
-    text-align: center;
-  
-    a {
-      font-size: 22px;
-      color: #777;
-      text-decoration: none;
-      transition: all 0.45s;
+    
+
+  li {
+    display: inline-flex;
+    width: 150px;
+    height: 2rem;
+    justify-content: space-around;
+    background-color: $third-color;    
+    border-radius: 40px;
+    &:hover{
+      background-color: $fourth-color;
     }
-  
-  
-  
-    &:hover a {
-      color: #d94f5c;
-    }
-  
-  
+
+  }
+    
+  .link {
+    text-decoration: none;
+    color: white;
+    align-self: center;
   }
