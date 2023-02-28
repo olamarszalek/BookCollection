@@ -9,6 +9,7 @@ import Add from './view/Add/Add';
 import { All } from './view/All/All';
 import { OneBook } from './view/OneBook/OneBook';
 import { GlobalStore } from './Store/GlobalStore';
+import { Footer } from './components/Footer/Footer';
 
 
 function App() {
@@ -38,6 +39,7 @@ function App() {
         <Route path='/' element={<Home/>}/>
         <Route path=':book/:id' element={<OneBook />} />
       </Routes>
+      <Footer/>
     </div>
     </GlobalStore>
   );

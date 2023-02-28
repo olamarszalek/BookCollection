@@ -1,11 +1,12 @@
+@import '../../typography/tokens.scss';
 footer {
-    position: absolute;
+    position: sticky;
     font-size: 12px;
     bottom: 0;
     width: 100%;
     line-height: 60px;
     font-size: 14px;
-    background-color: #f1f1f1;
+    background-color: $first-color;
     color: #000000;
     text-align: center;
 
