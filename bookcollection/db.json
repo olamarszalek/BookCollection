@@ -83,83 +83,16 @@
       "id": 6
     },
     {
-      "author": "Blanka Lipińska",
-      "title": "365 dni",
-      "description": "Powieść była nominowana do nagrody Bestsellery Empiku w kategorii literatura polska[1][2]. Książka rozeszła się w nakładzie ponad 100 tys. egzemplarzy[3].\n\nPowieść została zekranizowana, a film 365 dni wyreżyserowała Barbara Białowąs. Premiera filmu odbyła się w 2020, a główne role zagrali w niej Anna-Maria Sieklucka jako Laura Biel i Michele Morrone jako Don Massimo Torricelli. Film był najczęściej oglądaną polską produkcją w kinach w 2020, za co został nagrodzony Bursztynowymi Lwami podczas 45. Festiwalu Polskich Filmów Fabularnych w Gdyni[4]. Po międzynarodowej premierze na Netflixie ekranizacja była najpopularniejszym filmem na tej platformie w 2020[5].",
-      "years": 2016,
+      "author": "Zadie Smith",
+      "title": "White Teeth",
+      "description": "White Teeth is a 2000 novel by the British author Zadie Smith. It focuses on the later lives of two wartime friends—the Bangladeshi Samad Iqbal and the Englishman Archie Jones—and their families in London. The novel centres on Britain's relationship with immigrants from the British Commonwealth.[2]",
+      "years": 2000,
       "rating": [
         5,
-        10
+        8
       ],
-      "url": "https://ecsmedia.pl/c/365-dni-w-iext115627841.jpg",
-      "id": 7
-    },
-    {
-      "author": "Blanka Lipińska",
-      "title": "365 dni",
-      "description": "Powieść była nominowana do nagrody Bestsellery Empiku w kategorii literatura polska[1][2]. Książka rozeszła się w nakładzie ponad 100 tys. egzemplarzy[3].\n\nPowieść została zekranizowana, a film 365 dni wyreżyserowała Barbara Białowąs. Premiera filmu odbyła się w 2020, a główne role zagrali w niej Anna-Maria Sieklucka jako Laura Biel i Michele Morrone jako Don Massimo Torricelli. Film był najczęściej oglądaną polską produkcją w kinach w 2020, za co został nagrodzony Bursztynowymi Lwami podczas 45. Festiwalu Polskich Filmów Fabularnych w Gdyni[4]. Po międzynarodowej premierze na Netflixie ekranizacja była najpopularniejszym filmem na tej platformie w 2020[5].",
-      "years": 2016,
-      "rating": [
-        5,
-        10
-      ],
-      "url": "https://ecsmedia.pl/c/katedra-w-iext115646901.jpg",
-      "id": 8
-    },
-    {
-      "author": "Blanka Lipińska",
-      "title": "365 dni",
-      "description": "Powieść była nominowana do nagrody Bestsellery Empiku w kategorii literatura polska[1][2]. Książka rozeszła się w nakładzie ponad 100 tys. egzemplarzy[3].\\n\\nPowieść została zekranizowana, a film 365 dni wyreżyserowała Barbara Białowąs. Premiera filmu odbyła się w 2020, a główne role zagrali w niej Anna-Maria Sieklucka jako Laura Biel i Michele Morrone jako Don Massimo Torricelli. Film był najczęściej oglądaną polską produkcją w kinach w 2020, za co został nagrodzony Bursztynowymi Lwami podczas 45. Festiwalu Polskich Filmów Fabularnych w Gdyni[4]. Po międzynarodowej premierze na Netflixie ekranizacja była najpopularniejszym filmem na tej platformie w 2020[5].",
-      "years": 2016,
-      "rating": [
-        5
-      ],
-      "url": "x",
-      "id": 9
-    },
-    {
-      "author": "Blanka Lipińska",
-      "title": "365 dni",
-      "description": "Powieść była nominowana do nagrody Bestsellery ",
-      "years": 2023,
-      "rating": [
-        5
-      ],
-      "url": "x",
-      "id": 10
-    },
-    {
-      "author": "jh,",
-      "title": "jyjygjh",
-      "description": "iujtrhre",
-      "years": 2018,
-      "rating": [
-        5
-      ],
-      "url": "x",
-      "id": 11
-    },
-    {
-      "author": "rthsrty",
-      "title": "hrth",
-      "description": "rtdhd",
-      "years": 2023,
-      "rating": [
-        5
-      ],
-      "url": "x",
-      "id": 12
-    },
-    {
-      "author": "hgj",
-      "title": "fgh",
-      "description": "fghfh",
-      "years": 2023,
-      "rating": [
-        5
-      ],
-      "url": "x",
-      "id": 13
+      "url": "https://en.wikipedia.org/wiki/White_Teeth#/media/File:WhiteTeeth.jpg",
+      "id": 14
     }
   ],
   "author": [
@@ -222,6 +155,11 @@
       "author": "hgj",
       "bio": "fghfhg",
       "id": 12
+    },
+    {
+      "author": "Zadie Smith",
+      "bio": "Zadie Smith (ur. 25 października 1975 w Londynie) – brytyjska pisarka, autorka opowiadań i powieści. Ukończyła King's College w Cambridge, członkini The Royal Society of Literature (RSL). (https://pl.wikipedia.org/wiki/Zadie_Smith)",
+      "id": 13
     }
   ]
 }
