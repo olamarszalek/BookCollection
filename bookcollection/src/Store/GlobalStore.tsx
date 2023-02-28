@@ -25,9 +25,9 @@ export interface AlertInfoSnackbar {
 export interface GlobalStateInterface {
   globalBooks: BookInterface[],
   globalAuthors: AuthorInterface[],
-  globalOpenSnackbar: boolean
-  globalGetBooks: (data: BookInterface[]) => void
-  globalGetAuthors: (data: AuthorInterface[]) => void
+  globalOpenSnackbar: boolean,
+  globalGetBooks: (data: BookInterface[]) => void,
+  globalGetAuthors: (data: AuthorInterface[]) => void,
   globalAlertInfoSnackbar: AlertInfoSnackbar,
   globalOpenSnackbarChange: (payload: boolean)=> void,
   globalAlertInfoSnackbarChange: (payload: AlertInfoSnackbar) => void

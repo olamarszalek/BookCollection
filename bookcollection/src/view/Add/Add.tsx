@@ -10,7 +10,7 @@ import {
   Snackbar,
   TextField,
   Typography,
-  Modal,
+ 
 } from "@mui/material";
 import { DatePicker } from "@mui/x-date-pickers";
 import { LocalizationProvider } from "@mui/x-date-pickers/LocalizationProvider";
@@ -27,6 +27,16 @@ import { GlobalState, BookInterface } from "../../Store/GlobalStore";
 import { debounce } from "lodash";
 import moment, { Moment } from "moment";
 import { AdapterMoment } from "@mui/x-date-pickers/AdapterMoment";
+import Modal from "@mui/material/Modal";
+
+interface Payload {
+  author: string,
+  title: string,
+  description: string,
+  years: number | undefined,
+  rating: number[],
+  url: string
+}
 
 const Add: FC = () => {
   const date = new Date().getFullYear().toLocaleString();
@@ -58,7 +68,7 @@ const Add: FC = () => {
     getAllAuthors();
   }, []);
 
-  const isObjectComplete = (obj: BookInterface): boolean => {
+  const isObjComplete = (obj: BookInterface): boolean => {
     const objKeys = Object.keys(obj);
     const isComplete = objKeys.every((item: string) => {
       return obj.author !== "" && obj.years !== undefined;
@@ -73,8 +83,8 @@ const Add: FC = () => {
         if (
           item.id.search("author") > -1 ||
           item.id.search("title") > -1 ||
-          item.id.search("describe") > -1 ||
-          item.id.search("img-url") > -1
+          item.id.search("description") > -1 ||
+          item.id.search("url") > -1
         ) {
           return item;
         } else {
@@ -90,13 +100,13 @@ const Add: FC = () => {
         rating: [5],
         url: (onlyElForm[3] as HTMLInputElement).value,
       };
-
-      const isValid = isObjectComplete(payload);
+      console.log(payload)
+      const isValid = isObjComplete(payload);
       setBookInvalid(isValid);
 
       if (isValid) {
         addNewBook(payload)
-          .then((response) => {
+          .then(response => {
             global.globalAlertInfoSnackbarChange({
               severity: "success",
               message: `${payload.title} by ${payload.author} is added.`,
@@ -124,7 +134,7 @@ const Add: FC = () => {
   const idAuthor = createID("author");
   const idTitle = createID("title");
   const idDescription = createID("description");
-  const idImg = createID("img-url");
+  const idImg = createID("url");
 
   const [open, setOpen] = useState(false);
   const [newAuthor, setNewAuthor] = useState("");
@@ -153,7 +163,7 @@ const Add: FC = () => {
     };
 
     addAuthor(payload)
-      .then((res) => {
+      .then(res => {
         global.globalAlertInfoSnackbarChange({
           severity: "success",
           message: `${payload.author}'s bio was added.`,
@@ -161,7 +171,7 @@ const Add: FC = () => {
         });
         global.globalOpenSnackbarChange(true);
       })
-      .catch((err) => {
+      .catch(err => {
         global.globalAlertInfoSnackbarChange({
           severity: "error",
           message: `Couldn't save author: ${payload.author}`,
@@ -175,7 +185,7 @@ const Add: FC = () => {
       authorName.current?.children[0] as HTMLInputElement
     ).value;
     const isAuthor = global.globalAuthors.some(
-      (item) => item.author.toUpperCase() === authorNameInputVal.toUpperCase()
+      item => item.author.toUpperCase() === authorNameInputVal.toUpperCase()
     );
     if (!isAuthor) {
       setNewAuthor(authorNameInputVal);
