@@ -1,22 +1,23 @@
 @import '../../typography/tokens.scss';
+
+
 footer {
-    position: sticky;
+    position: fixed;
     font-size: 12px;
     bottom: 0;
     width: 100%;
     line-height: 60px;
     font-size: 14px;
     background-color: $first-color;
-    color: #000000;
+    color: $sixth-color;
     text-align: center;
 
-    a {
-        text-decoration: none;
-        color: inherit;
-        border-bottom: 1px solid;
-
+    .icon {
+        color: $fifth-color;
         &:hover {
-            border-bottom: 1px transparent;
+            transform: scale(1.5);
         }
     }
+
+    
 }
