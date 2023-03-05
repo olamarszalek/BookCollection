@@ -9,11 +9,12 @@ footer {
     line-height: 60px;
     font-size: 14px;
     background-color: $first-color;
-    color: $sixth-color;
+    color: $main-font-color;
     text-align: center;
+    font-size: large;
 
     .icon {
-        color: $fifth-color;
+        color: rgb(89, 4, 138);
         &:hover {
             transform: scale(1.5);
         }
