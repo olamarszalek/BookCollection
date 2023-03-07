@@ -18,20 +18,20 @@
   },
   "books": [
     {
-      "author": "Blanka Lipińska",
-      "title": "365 dni",
-      "description": "Massimo daje dziewczynie 365 dni na to, by go pokochała i z nim została. „Ojciec chrzestny” w połączeniu z „Pięćdziesięcioma twarzami Greya”",
-      "years": 2018,
+      "author": "Michael Chabon",
+      "title": "Moonglow",
+      "description": "Moonglow is a 2016 novel by Michael Chabon. The book chronicles the life of Chabon's grandfather, a WW2 soldier, engineer and rocket enthusiast who marries a troubled Jewish survivor from France and lives a challenging, wandering life in postwar America. Chabon tells the story using a mixture of strict memoir and creative fiction writing.[1] The narrator functions as a proxy for the author, Chabon.[1][2]",
+      "years": 2016,
       "rating": [
-        5
+        7
       ],
-      "url": "https://s.lubimyczytac.pl/upload/books/4850000/4850591/666969-170x243.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/en/0/03/Moonglow_cover.jpg",
       "id": 1
     },
     {
-      "author": "Blanka Lipińska",
-      "title": " Kolejne 365 dni, ale nuda",
-      "description": "Co za tragedia",
+      "author": "Zadie Smith",
+      "title": "White Teeth",
+      "description": "White Teeth is a 2000 novel by the British author Zadie Smith. It focuses on the later lives of two wartime friends—the Bangladeshi Samad Iqbal and the Englishman Archie Jones—and their families in London. The novel centres on Britain's relationship with immigrants from the British Commonwealth.[2]",
       "years": 2020,
       "rating": [
         10,
@@ -40,7 +40,7 @@
         10,
         10
       ],
-      "url": "https://s.lubimyczytac.pl/upload/books/4873000/4873462/729808-170x243.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/en/1/1f/WhiteTeeth.jpg",
       "id": 2
     },
     {
@@ -60,14 +60,14 @@
       "id": 4
     },
     {
-      "author": "Jan Kochanowski",
-      "title": " Lista dzieł Jana Kochanowskiego.",
-      "description": "Odpis wczesnej redakcji łacińskich Elegii, znacznie różniącej się od wersji drukowanej z 1584 (zob. poz. XXXI), znajdujący się w rękopisie Jana Osmólskiego z Prawiednik (tzw. „Sylwa Osmólskiego”). Przyjmuje się, że teksty Kochanowskiego wpisano do rękopisu ok. 1562 r. Obok elegii wczesnej redakcji, w rękopisie znajduje się odpis wczesnych redakcji dwóch wierszy poety, zapisanych bez oznaczania autora. Są to: A. Pieśń zaczynająca się od słów: „Oko śmiertelne Boga nie widziało” wydana we Fragmentach (zobacz pozycja 40) jako Pieśń III; B. Gratiarum Actio pro victu,",
-      "years": 1900,
+      "author": "Mikhail Afanasyevich Bulgakov",
+      "title": "The Master and Margarita",
+      "description": "The Master and Margarita (Russian: Мастер и Маргарита) is a novel by Soviet writer Mikhail Bulgakov, written in the Soviet Union between 1928 and 1940 during Stalin's regime. A censored version, with several chapters cut by editors, was published in Moscow magazine in 1966–1967, after the writer's death, by his widow. The manuscript was not published as a book until 1967, in Paris. A samizdat version circulated that included parts cut out by official censors, and these were incorporated in a 1969 version published in Frankfurt. The novel has since been published in several languages and editions.",
+      "years": 1967,
       "rating": [
-        5
+        9
       ],
-      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Odprawa.jpg/220px-Odprawa.jpg",
+      "url": "https://ecsmedia.pl/c/the-master-and-margarita-w-iext69905138.jpg",
       "id": 5
     },
     {
@@ -122,8 +122,8 @@
       "id": 5
     },
     {
-      "author": "Bl",
-      "bio": "Brak informacji o Bl",
+      "author": "Michael Chabon",
+      "bio": "Michael Chabon was born in 1963, in Washington, D.C. and raised mostly in Columbia, a planned city with utopian aspirations in the Maryland tobacco country. He studied at Carnegie-Mellon and the University of Pittsburgh, received an M.F.A. in Creative Writing at UC Irvine, and has spent most of the past two decades in California, with brief sojourns in Washington State, Florida, and New York State. Since 1997, he has been living with his wife, Ayelet Waldman, also a writer, and their children, in Berkeley.",
       "id": 6
     },
     {
@@ -132,8 +132,8 @@
       "id": 7
     },
     {
-      "author": "wwww",
-      "bio": "Brak informacji o wwww",
+      "author": "Zadie Smith",
+      "bio": "Zadie Smith, originally Sadie Smith, (born October 27, 1975, London, England), British author known for her treatment of race, religion, and cultural identity and for her novels’ eccentric characters, savvy humour, and snappy dialogue. She became a sensation in the literary world with the publication of her first novel, White Teeth, in 2000.",
       "id": 8
     },
     {
@@ -152,8 +152,8 @@
       "id": 11
     },
     {
-      "author": "hgj",
-      "bio": "fghfhg",
+      "author": "Mikhail Afanasyevich Bulgakov",
+      "bio": "Mikhail Afanasyevich Bulgakov (Russian: Михаил Афанасьевич Булгаков, IPA: [mʲɪxɐˈil ɐfɐˈnasʲjɪvʲɪdʑ bʊlˈɡakəf];[2] 15 May [O.S. 3 May] 1891 – 10 March 1940) was a Russian, later Soviet writer, medical doctor, and playwright active in the first half of the 20th century.[1] He is best known for his novel The Master and Margarita, published posthumously, which has been called one of the masterpieces of the 20th century.[3]",
       "id": 12
     },
     {

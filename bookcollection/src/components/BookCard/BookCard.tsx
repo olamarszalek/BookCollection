@@ -62,7 +62,7 @@ export const BookCard: FC<PropsBookCard> = ({
           </Typography>
         </Tooltip>
         <Typography variant="h6">
-          <span> {title.toUpperCase()} rating </span> {ratingValue}
+          <span> Rating: </span> {ratingValue}
         </Typography>
       </>
     ) : (
@@ -71,7 +71,7 @@ export const BookCard: FC<PropsBookCard> = ({
           Author: {author?.toUpperCase()}
         </Typography>
         <Typography variant="h6">
-          <span> {title} rating </span> {ratingValue}
+          <span> Rating: </span> {ratingValue}
         </Typography>
       </>
     );
@@ -97,6 +97,10 @@ export const BookCard: FC<PropsBookCard> = ({
           startIcon={<ArrowBackIcon />}
           color="inherit"
           onClick={() => navigate(-1)}
+          sx={{":hover": {
+            bgcolor: "rgba(157, 26, 219, 0.5)",
+            color: "white"
+          }}}
         >
           Return
         </Button>
@@ -105,7 +109,7 @@ export const BookCard: FC<PropsBookCard> = ({
         <CardMedia
           className={styles[CSSClass]}
           component="img"
-          sx={{ width: 200 }}
+          sx={{ width: 150, height: 250 }}
           alt={`Book cover ${title}`}
           image={imgSRC}
         />

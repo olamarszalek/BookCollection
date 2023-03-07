@@ -1,3 +1,5 @@
+@import "../../typography/tokens.scss";
+
 .px150 {
     border: 1px solid #ddd;
     border-radius: 4px;
@@ -10,12 +12,19 @@
 }
 
 .tooltipMain {
-    color: red;
+    color: $main-font-color;
 }
 
 .bodyCardBook {
-    min-height: 500px;
+    min-height: 450px;
+    max-height: 450px;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    margin-bottom: 40px;
+    box-shadow: 0px 4px 4px rgba(75, 112, 244, 0.42);
 }
 
 .cardActionsBook {

@@ -38,7 +38,7 @@ export const Bio: FC = () => {
               <h4>Software Development Academy</h4>
               <p>
                 With SDA, I took part in a Javascript for Beginners course that
-                span over 10 months and covered basic and advanced HTML, CSS and
+                spanned over 10 months and covered basic and advanced HTML, CSS and
                 Javascript. On top of that, the course included GIT and CMS
                 workshops. We got to practice creating projects using Bootstrap
                 and Material UI, but the main focus in the last months was
