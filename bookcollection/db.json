@@ -44,17 +44,14 @@
       "id": 2
     },
     {
-      "author": "Adam Mickiewicz",
-      "title": "Pan Tadeusz ",
-      "description": "asld dlsfk sdfkl ldksfkldsfk kdfsl kf ksd",
-      "years": 2022,
+      "author": "Gabriel García Márquez",
+      "title": "One Hundred Years of Solitude",
+      "description": "One Hundred Years of Solitude (Spanish: Cien años de soledad, American Spanish: [sjen ˈaɲoz ðe soleˈðað]) is a 1967 novel by Colombian author Gabriel García Márquez that tells the multi-generational story of the Buendía family, whose patriarch, José Arcadio Buendía, founded the fictitious town of Macondo. The novel is often cited as one of the supreme achievements in world literature.[1][2][3][4]",
+      "years": 1967,
       "rating": [
         5,
         10,
-        10,
-        1,
-        1,
-        1
+        10
       ],
       "url": "https://s.lubimyczytac.pl/upload/books/4936000/4936657/836580-170x243.jpg",
       "id": 4
@@ -67,21 +64,10 @@
       "rating": [
         9
       ],
-      "url": "https://ecsmedia.pl/c/the-master-and-margarita-w-iext69905138.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/en/a/a0/Cien_a%C3%B1os_de_soledad_%28book_cover%2C_1967%29.jpg",
       "id": 5
     },
-    {
-      "author": "Blanka Lipińska",
-      "title": "365 dni",
-      "description": "Powieść była nominowana do nagrody Bestsellery Empiku w kategorii literatura polska[1][2]. Książka rozeszła się w nakładzie ponad 100 tys. egzemplarzy[3].\n\nPowieść została zekranizowana, a film 365 dni wyreżyserowała Barbara Białowąs. Premiera filmu odbyła się w 2020, a główne role zagrali w niej Anna-Maria Sieklucka jako Laura Biel i Michele Morrone jako Don Massimo Torricelli. Film był najczęściej oglądaną polską produkcją w kinach w 2020, za co został nagrodzony Bursztynowymi Lwami podczas 45. Festiwalu Polskich Filmów Fabularnych w Gdyni[4]. Po międzynarodowej premierze na Netflixie ekranizacja była najpopularniejszym filmem na tej platformie w 2020[5].",
-      "years": 2016,
-      "rating": [
-        5,
-        10
-      ],
-      "url": "https://ecsmedia.pl/c/365-dni-w-iext115627841.jpg",
-      "id": 6
-    },
+    
     {
       "author": "Zadie Smith",
       "title": "White Teeth",
@@ -92,7 +78,7 @@
         8
       ],
       "url": "https://en.wikipedia.org/wiki/White_Teeth#/media/File:WhiteTeeth.jpg",
-      "id": 14
+      "id": 6
     }
   ],
   "author": [
@@ -108,8 +94,8 @@
     },
     {
       "id": 2,
-      "author": "Bolesław Prus",
-      "bio": "Polski pisarz, prozaik, nowelista i publicysta okresu pozytywizmu, współtwórca polskiego realizmu, kronikarz Warszawy, myśliciel i popularyzator wiedzy, działacz społeczny, propagator turystyki pieszej i rowerowej. Jeden z najwybitniejszych i najważniejszych pisarzy w historii literatury polskiej."
+      "author": "Gabriel García Márquez",
+      "bio": "Gabriel José de la Concordia García Márquez (American Spanish: [ɡaˈβɾjel ɣaɾˈsi.a ˈmaɾkes] (listen);[a] 6 March 1927 – 17 April 2014) was a Colombian novelist, short-story writer, screenwriter, and journalist, known affectionately as Gabo ([ˈɡaβo]) or Gabito ([ɡaˈβito]) throughout Latin America. Considered one of the most significant authors of the 20th century, particularly in the Spanish language, he was awarded the 1972 Neustadt International Prize for Literature and the 1982 Nobel Prize in Literature.[1]"
     },
     {
       "author": "Jan Kochanowski",
